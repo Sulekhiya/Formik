@@ -7,7 +7,7 @@ const DashBoard = () => (
     <h1>Add Banner</h1>
     <Formik
       initialValues={{
-        id: "",
+        id: "1",
         deeplink: "",
         media_key: "",
         name: "",
@@ -34,7 +34,7 @@ const DashBoard = () => (
         <Field type="id" name="id" />
         <ErrorMessage name="id" />
         <br></br>
-        <Field type="deeplink" name="deeplink" />
+        <Field type="deeplink" name="deeplink" placeholder={"sahil://home"} />
         <ErrorMessage name="deeplink" />
         <br></br>
         <Field name="start_time" type="datetime-local" />
